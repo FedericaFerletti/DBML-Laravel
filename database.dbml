@@ -1,0 +1,137 @@
+Table admin {
+  "id" int [pk]
+  name varchar
+  surname varchar
+  email varchar [unique, not null]
+  password varchar
+  role varchar [default: admin]
+  photo varchar
+}
+
+Table principal {
+  id int [pk]
+  name varchar
+  surname varchar
+  email varchar [unique, not null]
+  password varchar
+  classi varchar
+  school varchar
+  role varchar [default: principal]
+  photo varchar
+}
+
+Table school {
+  id int [pk]
+  name varchar
+  address varchar
+  degree varchar
+  principal_id int
+  email varchar
+  price int
+  class_id int
+  course_id int
+}
+
+Table educator {
+  id int [pk]
+  name varchar
+  surname varchar
+  email varchar [unique, not null]
+  role varchar [default: educator]
+  photo varchar
+  password varchar
+  cf varchar
+  number_phone int
+}
+
+Table student {
+  id int [pk]
+  name varchar
+  surname varchar
+  email varchar [unique, not null]
+  role varchar [default: student]
+  photo varchar
+  bot varchar
+  class varchar
+  level int
+  certification int
+  password varchar
+  dob date
+  badge int
+  educator int
+}
+
+Table course {
+  id int [pk]
+  title varchar
+  materia date
+  educator varchar
+  badge_id int
+  score integer
+  lesson integer
+  school_id int
+  hours datetime
+  date date
+}
+
+Table lesson {
+  id int [pk]
+  title varchar
+  type varchar
+  description text
+  score int
+  badge varchar
+  url varchar
+  completed int
+  badge_id int
+  file varchar
+}
+
+Table class {
+  id int [pk]
+  degree int
+  section varchar
+  student_id int
+}
+
+Table badge {
+  id int [pk]
+  name varchar
+  category varchar
+  level int
+  score int
+  assignment text
+  description text
+  photo varchar
+}
+
+Table school_course {
+  school_id int
+  course_school_id int
+
+Indexes {
+  (school_id, course_school_id) [pk]
+}
+}
+
+Ref:lesson.id < course.lesson
+
+Ref:principal.id < school.principal_id
+
+Ref:school.id < school_course.school_id
+
+Ref:course.school_id < school_course.course_school_id
+
+Ref:class.student_id < student.id
+
+Ref:school.class_id < class.id
+
+Ref:student.certification < course.id
+
+Ref:badge.id < lesson.badge_id
+
+Ref:badge.id < course.badge_id
+
+Ref:student.badge < badge.id
+
+Ref:educator.id < student.educator

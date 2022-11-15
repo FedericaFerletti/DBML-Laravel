@@ -1,0 +1,963 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d77720d9358966017b9d082d6afec651",
+    "packages": [
+        {
+            "name": "butschster/dbml-parser",
+            "version": "v0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/butschster/dbml-parser.git",
+                "reference": "8fa782e71500ca8ba19b7fe9c8c04775fade863b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/butschster/dbml-parser/zipball/8fa782e71500ca8ba19b7fe9c8c04775fade863b",
+                "reference": "8fa782e71500ca8ba19b7fe9c8c04775fade863b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0",
+                "phplrt/runtime": "^3.1."
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phplrt/phplrt": "^3.1",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Butschster\\Dbml\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Buchnev",
+                    "email": "butschster@gmail.com"
+                }
+            ],
+            "description": "DBML (database markup language) parser written on PHP8.",
+            "keywords": [
+                "DBML",
+                "database",
+                "dbml-parser",
+                "ddl",
+                "php",
+                "php8",
+                "sql"
+            ],
+            "support": {
+                "issues": "https://github.com/butschster/dbml-parser/issues",
+                "source": "https://github.com/butschster/dbml-parser/tree/v0.2"
+            },
+            "time": "2022-06-27T06:40:01+00:00"
+        },
+        {
+            "name": "phplrt/ast-contracts",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/ast-contracts.git",
+                "reference": "458ef1d14479021449133fa320d640ae9af05430"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/ast-contracts/zipball/458ef1d14479021449133fa320d640ae9af05430",
+                "reference": "458ef1d14479021449133fa320d640ae9af05430",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Contracts\\Ast\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "A set of phplrt ast abstractions",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "abstractions",
+                "ast",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "standards",
+                "tree"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/ast-contracts/issues",
+                "source": "https://github.com/phplrt/ast-contracts"
+            },
+            "time": "2022-04-09T18:55:16+00:00"
+        },
+        {
+            "name": "phplrt/buffer",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/buffer.git",
+                "reference": "60c2a9959ddbd6a0c95810d97f5472561998eb28"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/buffer/zipball/60c2a9959ddbd6a0c95810d97f5472561998eb28",
+                "reference": "60c2a9959ddbd6a0c95810d97f5472561998eb28",
+                "shasum": ""
+            },
+            "require": {
+                "ext-spl": "*",
+                "php": "^7.4|^8.0",
+                "phplrt/lexer": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.20",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Buffer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "The phplrt buffer library",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "Buffer",
+                "stream",
+                "token"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/phplrt/issues",
+                "source": "https://github.com/phplrt/buffer"
+            },
+            "time": "2022-04-10T01:02:15+00:00"
+        },
+        {
+            "name": "phplrt/exception",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/exception.git",
+                "reference": "f238e08ccfd9017eb35e458fd7120a6fbb20d31d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/exception/zipball/f238e08ccfd9017eb35e458fd7120a6fbb20d31d",
+                "reference": "f238e08ccfd9017eb35e458fd7120a6fbb20d31d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-pcre": "*",
+                "ext-spl": "*",
+                "php": "^7.4|^8.0",
+                "phplrt/exception-contracts": "^3.2",
+                "phplrt/position": "^3.2",
+                "phplrt/source": "^3.2"
+            },
+            "provide": {
+                "phplrt/exception-contracts-implementation": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.20",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Exception\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "The phplrt exception package",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "errors",
+                "exception",
+                "helpers",
+                "parsing"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/phplrt/issues",
+                "source": "https://github.com/phplrt/exception"
+            },
+            "time": "2022-04-09T21:01:55+00:00"
+        },
+        {
+            "name": "phplrt/exception-contracts",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/exception-contracts.git",
+                "reference": "d42f8f4bb668a423a911e02431c50a6909fd9bc9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/exception-contracts/zipball/d42f8f4bb668a423a911e02431c50a6909fd9bc9",
+                "reference": "d42f8f4bb668a423a911e02431c50a6909fd9bc9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phplrt/lexer-contracts": "^3.2",
+                "phplrt/source-contracts": "^3.2"
+            },
+            "require-dev": {
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Contracts\\Exception\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "A set of phplrt exception abstractions",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "exception",
+                "interfaces",
+                "interoperability",
+                "standards"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/exception-contracts/issues",
+                "source": "https://github.com/phplrt/exception-contracts"
+            },
+            "time": "2022-04-09T18:55:18+00:00"
+        },
+        {
+            "name": "phplrt/lexer",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/lexer.git",
+                "reference": "d2c885f011c6cb9bbaa50f9115e55fe45ed577cc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/lexer/zipball/d2c885f011c6cb9bbaa50f9115e55fe45ed577cc",
+                "reference": "d2c885f011c6cb9bbaa50f9115e55fe45ed577cc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-pcre": "*",
+                "ext-spl": "*",
+                "php": "^7.4|^8.0",
+                "phplrt/exception": "^3.2",
+                "phplrt/lexer-contracts": "^3.2",
+                "phplrt/source": "^3.2"
+            },
+            "provide": {
+                "phplrt/lexer-contracts-implementation": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.20",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/polyfill.php"
+                ],
+                "psr-4": {
+                    "Phplrt\\Lexer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "The phplrt lexer library that can be used for scanners implementation using PCRE",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "lexer",
+                "parsing",
+                "regex",
+                "scanner",
+                "stream",
+                "token",
+                "tokenizer"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/phplrt/issues",
+                "source": "https://github.com/phplrt/lexer"
+            },
+            "time": "2022-04-10T13:58:16+00:00"
+        },
+        {
+            "name": "phplrt/lexer-contracts",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/lexer-contracts.git",
+                "reference": "a33b7a427953d5f9029b59d6588e368a17a50c44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/lexer-contracts/zipball/a33b7a427953d5f9029b59d6588e368a17a50c44",
+                "reference": "a33b7a427953d5f9029b59d6588e368a17a50c44",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/polyfill.php"
+                ],
+                "psr-4": {
+                    "Phplrt\\Contracts\\Lexer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "A set of phplrt lexer abstractions",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "abstractions",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "lexer",
+                "parsing",
+                "regex",
+                "standards",
+                "stream",
+                "token",
+                "tokenizer"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/lexer-contracts/issues",
+                "source": "https://github.com/phplrt/lexer-contracts"
+            },
+            "time": "2022-04-10T14:15:00+00:00"
+        },
+        {
+            "name": "phplrt/parser",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/parser.git",
+                "reference": "91c7d7bcfca79344799b01da1a17bda295769c75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/parser/zipball/91c7d7bcfca79344799b01da1a17bda295769c75",
+                "reference": "91c7d7bcfca79344799b01da1a17bda295769c75",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phplrt/ast-contracts": "^3.2",
+                "phplrt/buffer": "^3.2",
+                "phplrt/exception": "^3.2",
+                "phplrt/lexer-contracts": "^3.2",
+                "phplrt/parser-contracts": "^3.2",
+                "phplrt/source": "^3.2"
+            },
+            "provide": {
+                "phplrt/parser-contracts-implementation": "^3.2"
+            },
+            "replace": {
+                "phplrt/grammar": "<=3.1",
+                "phplrt/grammar-contracts": "<=3.1"
+            },
+            "require-dev": {
+                "jetbrains/phpstorm-attributes": "^1.0",
+                "phplrt/lexer": "^3.2",
+                "phplrt/visitor": "^3.2",
+                "phpunit/phpunit": "^9.5.20",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/polyfill.php"
+                ],
+                "psr-4": {
+                    "Phplrt\\Parser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "The phplrt Parser package.",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "language",
+                "ll1",
+                "llk",
+                "lr",
+                "parser",
+                "php",
+                "slr"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/phplrt/issues",
+                "source": "https://github.com/phplrt/parser"
+            },
+            "time": "2022-04-10T01:02:12+00:00"
+        },
+        {
+            "name": "phplrt/parser-contracts",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/parser-contracts.git",
+                "reference": "21b2164feed26270a53a41f5569f8589b38b69cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/parser-contracts/zipball/21b2164feed26270a53a41f5569f8589b38b69cb",
+                "reference": "21b2164feed26270a53a41f5569f8589b38b69cb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Contracts\\Parser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "A set of phplrt parser abstractions",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "abstractions",
+                "analysis",
+                "contracts",
+                "decoupling",
+                "interfaces",
+                "interoperability",
+                "language",
+                "parser",
+                "php",
+                "standards",
+                "syntax"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/parser-contracts/issues",
+                "source": "https://github.com/phplrt/parser-contracts"
+            },
+            "time": "2022-04-09T18:55:34+00:00"
+        },
+        {
+            "name": "phplrt/position",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/position.git",
+                "reference": "7912efd6b7883d6a30e0b5efe4056c302c720359"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/position/zipball/7912efd6b7883d6a30e0b5efe4056c302c720359",
+                "reference": "7912efd6b7883d6a30e0b5efe4056c302c720359",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phplrt/position-contracts": "^3.2",
+                "phplrt/source": "^3.2"
+            },
+            "provide": {
+                "phplrt/position-contracts-implementation": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.20",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Position\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "The phplrt position package.",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "analyzing",
+                "column",
+                "input",
+                "line",
+                "offset",
+                "position",
+                "utils",
+                "visualization"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/phplrt/issues",
+                "source": "https://github.com/phplrt/position"
+            },
+            "time": "2022-04-09T18:56:35+00:00"
+        },
+        {
+            "name": "phplrt/position-contracts",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/position-contracts.git",
+                "reference": "65490465e4bef9785fc5f0dfddd9fb09cf9b2e33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/position-contracts/zipball/65490465e4bef9785fc5f0dfddd9fb09cf9b2e33",
+                "reference": "65490465e4bef9785fc5f0dfddd9fb09cf9b2e33",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Contracts\\Position\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "A set of phplrt position abstractions",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "abstractions",
+                "analyzing",
+                "column",
+                "contracts",
+                "decoupling",
+                "input",
+                "interfaces",
+                "interoperability",
+                "line",
+                "offset",
+                "position",
+                "standards",
+                "utils",
+                "visualization"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/position-contracts/issues",
+                "source": "https://github.com/phplrt/position-contracts"
+            },
+            "time": "2022-04-09T18:55:33+00:00"
+        },
+        {
+            "name": "phplrt/runtime",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/runtime.git",
+                "reference": "a7310098ee98f7b148e60b64ac173b76e7926e46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/runtime/zipball/a7310098ee98f7b148e60b64ac173b76e7926e46",
+                "reference": "a7310098ee98f7b148e60b64ac173b76e7926e46",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phplrt/lexer": "^3.2",
+                "phplrt/parser": "^3.2",
+                "phplrt/position": "^3.2",
+                "phplrt/visitor": "^3.2"
+            },
+            "type": "metapackage",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "A set of phplrt runtime libraries",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "runtime"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/runtime/issues",
+                "source": "https://github.com/phplrt/runtime"
+            },
+            "time": "2022-04-09T18:55:43+00:00"
+        },
+        {
+            "name": "phplrt/source",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/source.git",
+                "reference": "86513f0fc3f8624a91f7a18cb6f7cf80759ad515"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/source/zipball/86513f0fc3f8624a91f7a18cb6f7cf80759ad515",
+                "reference": "86513f0fc3f8624a91f7a18cb6f7cf80759ad515",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phplrt/source-contracts": "^3.2"
+            },
+            "provide": {
+                "phplrt/source-contracts-implementation": "^3.2"
+            },
+            "require-dev": {
+                "laminas/laminas-diactoros": "^2.2",
+                "phpunit/phpunit": "^9.5.20",
+                "psr/http-message": "^1.0",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Source\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "The phplrt sources package",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "abstraction",
+                "directory",
+                "file",
+                "file system",
+                "fs",
+                "reader"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/phplrt/issues",
+                "source": "https://github.com/phplrt/source"
+            },
+            "time": "2022-04-09T21:01:59+00:00"
+        },
+        {
+            "name": "phplrt/source-contracts",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/source-contracts.git",
+                "reference": "12e8f8e5056dfc9df8c56cd60dd78214bb6824fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/source-contracts/zipball/12e8f8e5056dfc9df8c56cd60dd78214bb6824fc",
+                "reference": "12e8f8e5056dfc9df8c56cd60dd78214bb6824fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0"
+            },
+            "require-dev": {
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Contracts\\Source\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "A set of phplrt source abstractions",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "disk",
+                "file",
+                "io",
+                "read",
+                "source"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/source-contracts/issues",
+                "source": "https://github.com/phplrt/source-contracts"
+            },
+            "time": "2022-04-10T14:15:08+00:00"
+        },
+        {
+            "name": "phplrt/visitor",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phplrt/visitor.git",
+                "reference": "b905c116053a8f301d565cc21f35ea3bc9755b94"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phplrt/visitor/zipball/b905c116053a8f301d565cc21f35ea3bc9755b94",
+                "reference": "b905c116053a8f301d565cc21f35ea3bc9755b94",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phplrt/ast-contracts": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.20",
+                "vimeo/psalm": "^4.22"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev",
+                    "dev-main": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phplrt\\Visitor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kirill Nesmeyanov",
+                    "email": "nesk@xakep.ru"
+                }
+            ],
+            "description": "The phplrt visitor package",
+            "homepage": "https://github.com/phplrt",
+            "keywords": [
+                "ast",
+                "traverser",
+                "tree",
+                "visitor"
+            ],
+            "support": {
+                "issues": "https://github.com/phplrt/phplrt/issues",
+                "source": "https://github.com/phplrt/visitor"
+            },
+            "time": "2022-04-10T13:58:39+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
+}
