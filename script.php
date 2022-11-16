@@ -67,7 +67,52 @@ foreach ($tables as $table) {
                         $lineContent = '               $table->text("'.$name.'");'. PHP_EOL;
 
                     }
-                    //echo $file;
+
+                    //Controlliamo se è pk
+                    $pk = $column->isPrimaryKey();
+                
+                    if($pk !== null){
+                        $lineContent = str_replace(';', "", $lineContent);
+                        $lineContent .= '                   ->primary();'.PHP_EOL;
+                        //echo 'DEFAULT: '.$lineContent;
+                    }
+
+                    //Controlliamo se esiste il default
+                    $default = $column->getDefault(); 
+                    
+                    if($default !== null){
+                        $value = $default->getValue();
+                        $lineContent = str_replace(';', "", $lineContent);
+                        $lineContent .= '                   ->default("'.$value.'");'.PHP_EOL;
+                        //echo 'DEFAULT: '.$lineContent;
+                    }
+
+                   
+
+                    //controlliamo se esiste [unique] ->unique();
+                    $unique = $column->isUnique();
+                    if($unique == 1){
+                        $lineContent = str_replace(';', "", $lineContent);
+                        $lineContent .= '                   ->unique();'.PHP_EOL;
+                    }
+
+                    //[nullable]
+                    $nullable = $column->isNull();
+        
+                    if($nullable == 1 && $name !== 'id'){
+                        $lineContent = str_replace(';', "", $lineContent);
+                        $lineContent .= '                   ->nullable();'.PHP_EOL;
+                    } else if ($name !== 'id'){
+                        $lineContent = str_replace(';', "", $lineContent);
+                        $lineContent .= '                   ->nullable(false);'.PHP_EOL;
+                    }
+
+                    $autoInc = $column->isIncrement();
+                    if($autoInc == 1 && $name !== 'id'){
+                        $lineContent = str_replace(';', "", $lineContent);
+                        $lineContent = '           $table->increments('.$name.');'.PHP_EOL;
+                    }
+                   
                     file_put_contents($myfile, $lineContent, FILE_APPEND);
                 }
                 
@@ -77,8 +122,7 @@ foreach ($tables as $table) {
         }
 
         $finalText = '
-        
-                $table->timestamps();
+               $table->timestamps();
         });
     }
     
@@ -100,4 +144,3 @@ foreach ($tables as $table) {
         file_put_contents($myfile, $finalText, FILE_APPEND);  
     }
 }
-
