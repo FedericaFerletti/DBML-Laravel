@@ -71,7 +71,7 @@ foreach ($tables as $table) {
                     //Controlliamo se è pk
                     $pk = $column->isPrimaryKey();
                 
-                    if($pk !== null){
+                    if($pk == 1){
                         $lineContent = str_replace(';', "", $lineContent);
                         $lineContent .= '                   ->primary();'.PHP_EOL;
                         //echo 'DEFAULT: '.$lineContent;
