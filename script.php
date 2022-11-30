@@ -38,8 +38,8 @@ foreach ($tables as $table) {
      */
     public function up()
     {
-        Schema::create('.'"'.$nameTable.'"'.', function (Blueprint $table) {
-            
+        Schema::create('.'"'.$nameTable.'"'.', function (Blueprint $table) {   
+
     ';
         file_put_contents($myfile, $txt, FILE_APPEND);  
 
@@ -54,24 +54,30 @@ foreach ($tables as $table) {
                     $name = $column->getName();
                     $type = $column->getType()->getName();
 
-                    if ($type == 'varchar' || $type == 'text'){
-                        $lineContent = '               $table->string("'.$name.'");'. PHP_EOL;
-                        
-                    } else if ($type == 'data' || $type = 'datatime'){
-                        $lineContent = '               $table->integer("'.$name.'");'. PHP_EOL;
-
-                    } else if ($type == 'int' || $type = 'integer'){
-                        $lineContent = '               $table->integer("'.$name.'");'. PHP_EOL;
-
-                    } else if ($type = 'text'){
-                        $lineContent = '               $table->text("'.$name.'");'. PHP_EOL;
-
+                    if ($name !== 'id'){
+                        if ($type == 'varchar' || $type == 'text'){
+                            $lineContent = '               $table->string("'.$name.'");'. PHP_EOL;
+                            
+                        } else if ($type == 'data' || $type = 'datatime'){
+                            $lineContent = '               $table->integer("'.$name.'");'. PHP_EOL;
+    
+                        } else if ($type == 'int' || $type = 'integer'){
+                            $lineContent = '               $table->integer("'.$name.'");'. PHP_EOL;
+    
+                        } else if ($type = 'text'){
+                            $lineContent = '               $table->text("'.$name.'");'. PHP_EOL;
+    
+                        }
+                    } else {
+                        $lineContent = '               $table->id();'. PHP_EOL;
                     }
+
+                    
 
                     //Controlliamo se è pk
                     $pk = $column->isPrimaryKey();
                 
-                    if($pk == 1){
+                    if($pk == 1 && $name !== 'id'){
                         $lineContent = str_replace(';', "", $lineContent);
                         $lineContent .= '                   ->primary();'.PHP_EOL;
                         //echo 'DEFAULT: '.$lineContent;
